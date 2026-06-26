@@ -1,0 +1,434 @@
+﻿
+> gerpas-saas@0.1.0 lint
+> eslint
+
+
+D:\PROJECTS\gerpas-saas\src\app\api\factory\route.ts
+  119:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\api\orders\[id]\route.ts
+  97:16  warning  'updateOrder' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\expenses\[id]\edit\page.tsx
+  42:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  90:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\expenses\[id]\page.tsx
+  25:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\expenses\components\ExpensesTable.tsx
+  13:67  warning  'selectedMethod' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\expenses\new\page.tsx
+  51:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\expenses\page.tsx
+  35:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\income\[id]\edit\page.tsx
+  38:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  84:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\income\[id]\page.tsx
+  25:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\income\new\page.tsx
+  44:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\income\page.tsx
+  32:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\page.tsx
+   9:42  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+  11:10  warning  'error' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  22:21  error    Unexpected any. Specify a different type    @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\payments\[id]\edit\page.tsx
+  44:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  92:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\payments\[id]\page.tsx
+  25:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\finance\payments\new\page.tsx
+  50:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\categories\components\CategoriesTable.tsx
+   6:36   error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+   8:42   error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  23:21   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\categories\components\CategoriesTable.tsx:23:21
+  21 |   };
+  22 |
+> 23 |   useEffect(() => { fetchCats(); }, []);
+     |                     ^^^^^^^^^ Avoid calling setState() directly within an effect
+  24 |
+  25 |   const save = async (payload: any) => {
+  26 |     try {  react-hooks/set-state-in-effect
+  25:32   error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  32:35   error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  69:100  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  70:117  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\components\RecentActivity.tsx
+  43:10  warning  'payload' is defined but never used  @typescript-eslint/no-unused-vars
+  54:16  warning  'e' is defined but never used        @typescript-eslint/no-unused-vars
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\fabric-rolls\components\FabricRollsTable.tsx
+  42:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\fabric-rolls\components\FabricRollsTable.tsx:42:5
+  40 |
+  41 |   useEffect(() => {
+> 42 |     fetchRolls();
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  43 |   }, []);
+  44 |
+  45 |   // Load items and warehouses for dropdowns  react-hooks/set-state-in-effect
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\items\components\ItemForm.tsx
+  35:7   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\items\components\ItemForm.tsx:35:7
+  33 |   useEffect(() => {
+  34 |     if (item) {
+> 35 |       setForm({
+     |       ^^^^^^^ Avoid calling setState() directly within an effect
+  36 |         sku: item.sku ?? "",
+  37 |         name: item.name ?? "",
+  38 |         category_id: item.category_id ?? "",  react-hooks/set-state-in-effect
+  44:5   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+  61:5   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+  84:21  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\items\components\ItemsTable.tsx
+  115:24  warning  '_item' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\page.tsx
+  41:18  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\page.tsx:41:18
+  39 |   useEffect(() => {
+  40 |     let mounted = true;
+> 41 |     if (mounted) fetchOverview();
+     |                  ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  42 |     return () => { mounted = false; };
+  43 |   }, []);
+  44 |  react-hooks/set-state-in-effect
+  74:16  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  76:5   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\stock\components\AdjustForm.tsx
+   5:64  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  17:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\stock\components\TransferForm.tsx
+   5:66  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   9:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  25:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\transactions\[id]\report\page.tsx
+  41:10  warning  'show' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  41:16  warning  'setShow' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  53:19  error    Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\transactions\components\TransactionsTable.tsx
+  30:19  warning  'setFilters' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+  52:10  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\transactions\components\TransactionsTable.tsx:52:10
+  50 |
+  51 |   useEffect(() => {
+> 52 |     void fetchTx();
+     |          ^^^^^^^ Avoid calling setState() directly within an effect
+  53 |     // eslint-disable-next-line react-hooks/exhaustive-deps
+  54 |   }, []);
+  55 |  react-hooks/set-state-in-effect
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\transactions\new\page.tsx
+  110:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\warehouses\components\WarehousesTable.tsx
+   6:36   error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+   8:42   error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  19:21   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\inventory\warehouses\components\WarehousesTable.tsx:19:21
+  17 |   };
+  18 |
+> 19 |   useEffect(() => { fetchList(); }, []);
+     |                     ^^^^^^^^^ Avoid calling setState() directly within an effect
+  20 |
+  21 |   const save = async (payload: any) => {
+  22 |     try {  react-hooks/set-state-in-effect
+  21:32   error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  28:35   error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  40:441  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+  40:616  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\orders\[id]\edit\page.tsx
+  56:10  warning  'order' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\orders\[id]\page.tsx
+   51:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   91:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  113:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\orders\[id]\report\page.tsx
+    5:8   warning  'Link' is defined but never used                          @typescript-eslint/no-unused-vars
+    8:30  warning  'ORDER_STATUSES' is defined but never used                @typescript-eslint/no-unused-vars
+   17:10  warning  'statusPillClass' is defined but never used               @typescript-eslint/no-unused-vars
+   46:10  warning  'loading' is assigned a value but never used              @typescript-eslint/no-unused-vars
+   47:10  warning  'updatingStatus' is assigned a value but never used       @typescript-eslint/no-unused-vars
+   48:10  warning  'submittingDelete' is assigned a value but never used     @typescript-eslint/no-unused-vars
+   48:28  warning  'setSubmittingDelete' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   65:19  error    Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+  111:18  warning  'patchStatus' is defined but never used                   @typescript-eslint/no-unused-vars
+  127:17  error    Unexpected any. Specify a different type                  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\orders\new\page.tsx
+    6:10  warning  'Order' is defined but never used         @typescript-eslint/no-unused-vars
+  148:19  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\page.tsx
+   87:10  warning  'now' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  180:49  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\production\material-usage\page.tsx
+  45:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  66:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\production\page.tsx
+  53:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\purchase-orders\new\page.tsx
+  17:98  error  Do not use an `<a>` element to navigate to `/dashboard/orders/new/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\purchase-orders\page.tsx
+  31:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\purchase-orders\receive\page.tsx
+   9:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  10:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  11:40  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  43:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  98:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\reports\page.tsx
+  39:7   warning  'statusStyle' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  92:21  error    Unexpected any. Specify a different type          @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\settings\page.tsx
+   6:42  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-explicit-any
+  11:5   error  Error: Cannot access variable before it is declared
+
+`loadFactory` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\settings\page.tsx:11:5
+   9 |
+  10 |   useEffect(() => {
+> 11 |     loadFactory();
+     |     ^^^^^^^^^^^ `loadFactory` accessed before it is declared
+  12 |   }, []);
+  13 |
+  14 |   async function loadFactory() {
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\settings\page.tsx:14:3
+  12 |   }, []);
+  13 |
+> 14 |   async function loadFactory() {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 15 |     try {
+     | ^^^^^^^^^
+> 16 |       const res = await fetch("/api/factory");
+     ΓÇª
+     | ^^^^^^^^^
+> 29 |     }
+     | ^^^^^^^^^
+> 30 |   }
+     | ^^^^ `loadFactory` is declared here
+  31 |
+  32 |   async function handleSave() {
+  33 |     setSaving(true);  react-hooks/immutability
+  50:19  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\attendance\[id]\page.tsx
+   9:40  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  23:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\attendance\new\page.tsx
+  23:10  warning  'loading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  35:21  error    Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  82:19  error    Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\attendance\page.tsx
+   8:48  error  Unexpected any. Specify a different type                                                                                                                                             @typescript-eslint/no-explicit-any
+  24:21  error  Unexpected any. Specify a different type                                                                                                                                             @typescript-eslint/no-explicit-any
+  57:11  error  Do not use an `<a>` element to navigate to `/dashboard/team/attendance/new/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\departments\[id]\page.tsx
+   9:48  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  23:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\departments\new\page.tsx
+  36:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\departments\page.tsx
+   8:50  error  Unexpected any. Specify a different type                                                                                                                                              @typescript-eslint/no-explicit-any
+  21:21  error  Unexpected any. Specify a different type                                                                                                                                              @typescript-eslint/no-explicit-any
+  42:11  error  Do not use an `<a>` element to navigate to `/dashboard/team/departments/new/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\employees\[id]\page.tsx
+  24:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\employees\new\page.tsx
+    5:21  warning  'useMemo' is defined but never used           @typescript-eslint/no-unused-vars
+   40:10  warning  'loading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+   52:21  error    Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  106:19  error    Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\employees\page.tsx
+  27:19  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-explicit-any
+  35:10  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\employees\page.tsx:35:10
+  33 |
+  34 |   useEffect(() => {
+> 35 |     void loadEmployees();
+     |          ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  36 |   }, [search, status]);
+  37 |
+  38 |   const totals = useMemo(() => ({  react-hooks/set-state-in-effect
+  36:6   warning  React Hook useEffect has a missing dependency: 'loadEmployees'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               react-hooks/exhaustive-deps
+  53:11  error    Do not use an `<a>` element to navigate to `/dashboard/team/employees/new/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @next/next/no-html-link-for-pages
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\page.tsx
+   35:21  error  Unexpected any. Specify a different type                                                                                                                                          @typescript-eslint/no-explicit-any
+  119:13  error  Do not use an `<a>` element to navigate to `/dashboard/team/employees/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages    @next/next/no-html-link-for-pages
+  120:13  error  Do not use an `<a>` element to navigate to `/dashboard/team/departments/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+  121:13  error  Do not use an `<a>` element to navigate to `/dashboard/team/attendance/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages   @next/next/no-html-link-for-pages
+  122:13  error  Do not use an `<a>` element to navigate to `/dashboard/team/payroll/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages      @next/next/no-html-link-for-pages
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\payroll\[id]\page.tsx
+   9:40  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  23:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\payroll\new\page.tsx
+  24:10  warning  'loading' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  36:21  error    Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  87:19  error    Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+
+D:\PROJECTS\gerpas-saas\src\app\dashboard\team\payroll\page.tsx
+   8:44  error  Unexpected any. Specify a different type                                                                                                                                          @typescript-eslint/no-explicit-any
+  24:21  error  Unexpected any. Specify a different type                                                                                                                                          @typescript-eslint/no-explicit-any
+  57:11  error  Do not use an `<a>` element to navigate to `/dashboard/team/payroll/new/`. Use `<Link />` from `next/link` instead. See: https://nextjs.org/docs/messages/no-html-link-for-pages  @next/next/no-html-link-for-pages
+
+D:\PROJECTS\gerpas-saas\src\app\demo\page.tsx
+   5:10  warning  'label' is defined but never used                                @typescript-eslint/no-unused-vars
+  76:20  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\PROJECTS\gerpas-saas\src\app\onboarding\page.tsx
+  10:11  warning  'user' is assigned a value but never used                        @typescript-eslint/no-unused-vars
+  92:22  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+D:\PROJECTS\gerpas-saas\src\components\Footer.tsx
+  3:10  warning  'motion' is defined but never used                @typescript-eslint/no-unused-vars
+  7:9   warning  'currentYear' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\PROJECTS\gerpas-saas\src\components\SocialProof.tsx
+  7:7  warning  'factories' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+D:\PROJECTS\gerpas-saas\src\lib\ThemeContext.tsx
+   3:32  warning  'useContext' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+  21:5   error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\PROJECTS\gerpas-saas\src\lib\ThemeContext.tsx:21:5
+  19 |     const storedTheme = localStorage.getItem("theme") as Theme | null;
+  20 |     const initialTheme = storedTheme || "dark";
+> 21 |     setTheme(initialTheme);
+     |     ^^^^^^^^ Avoid calling setState() directly within an effect
+  22 |     document.documentElement.classList.toggle("light", initialTheme === "light");
+  23 |   }, []);
+  24 |  react-hooks/set-state-in-effect
+
+D:\PROJECTS\gerpas-saas\src\lib\auth.ts
+  1:8  warning  'supabase' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\PROJECTS\gerpas-saas\src\lib\dragSidebar.ts
+  10:20  error    Unexpected any. Specify a different type                                                        @typescript-eslint/no-explicit-any
+  25:28  error    Unexpected any. Specify a different type                                                        @typescript-eslint/no-explicit-any
+  50:5   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/exhaustive-deps')
+
+D:\PROJECTS\gerpas-saas\src\lib\factoryAuth.ts
+  10:41  warning  'req' is defined but never used  @typescript-eslint/no-unused-vars
+
+D:\PROJECTS\gerpas-saas\src\lib\useUser.ts
+  43:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+D:\PROJECTS\gerpas-saas\src\lib\useUser.ts:43:5
+  41 |
+  42 |   useEffect(() => {
+> 43 |     refetch();
+     |     ^^^^^^^ Avoid calling setState() directly within an effect
+  44 |   }, [refetch]);
+  45 |
+  46 |   const logout = useCallback(async () => {  react-hooks/set-state-in-effect
+
+Γ£û 140 problems (101 errors, 39 warnings)
+  0 errors and 4 warnings potentially fixable with the `--fix` option.
+
